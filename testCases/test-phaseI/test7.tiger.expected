@@ -1,0 +1,9 @@
+	assign, X, 0, 
+main:
+	add, 1, 2, $t0
+	mult, 3, 4, $t1
+	sub, $t0, $t1, $t2
+	add, $t2, 5, $t3
+	add, $t3, 6, $t4
+	call, printi, $t4
+	return, , , 

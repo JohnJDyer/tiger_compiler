@@ -1,0 +1,35 @@
+main:
+	assign, a, a, 
+	call, not, 2, $t0
+	assign, a, $t0, 
+	call, not, a, $t1
+	assign, a, $t1, 
+	array_load, $t2, b, 1
+	assign, a, $t2, 
+	array_load, $t3, b, 0
+	call, not, 1, $t4
+	assign, $t3, $t4, 
+	array_load, $t5, b, 1
+	call, not, a, $t6
+	assign, $t5, $t6, 
+	call, flush
+loop_label0:
+	breq, 1, 0, loop_label1
+	call, flush
+	goto, loop_label0, , 
+loop_label1:
+	assign, a, 1, 
+loop_label2:
+	brgt, a, 10, loop_label3
+	call, flush
+	add, a, 1, a
+	goto, loop_label2, , 
+loop_label3:
+	assign, b, 1, 
+loop_label4:
+	brgt, b, 10, loop_label5
+	goto, loop_label5, , 
+	add, b, 1, b
+	goto, loop_label4, , 
+loop_label5:
+	return, 1, , 

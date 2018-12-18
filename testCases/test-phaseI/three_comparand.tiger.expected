@@ -1,0 +1,8 @@
+	assign, a, 42, 
+main:
+	assign, $t0, 1, 
+	breq, 1, 2, compare_label0
+	assign, $t0, 0, 
+compare_label0:
+	assign, a, $t0, 
+	return, , , 

@@ -1,0 +1,8 @@
+let
+  var a: int;
+  var b: array[10] of int;
+in
+  if a=b[1] then
+    a:=b;
+  endif;
+end

@@ -1,0 +1,13 @@
+let
+  type IntArray = array [10] of int;
+  var a: IntArray := 42;
+  var i: int;
+in
+  for i := 0 to 9 do
+    printi(a[i]);
+    a[i] := i;
+  enddo;
+  for i := 0 to 9 do
+    printi(a[i]);
+  enddo;
+end

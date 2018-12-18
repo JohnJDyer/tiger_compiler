@@ -1,0 +1,9 @@
+main:
+	add, 1, 2, $t0
+	breq, $t0, 0, if_label0
+	call, flush
+	goto, if_label1, , 
+if_label0:
+	call, flush
+if_label1:
+	return, , , 

@@ -1,0 +1,7 @@
+a:
+b:
+c:
+d:
+main:
+	call, flush
+	return, , , 

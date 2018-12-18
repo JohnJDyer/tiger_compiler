@@ -1,0 +1,17 @@
+	assign, i, 42, 
+main:
+loop_label0:
+	breq, 1, 0, loop_label1
+	call, flush
+	goto, loop_label1, , 
+	goto, loop_label0, , 
+loop_label1:
+	assign, i, 0, 
+loop_label2:
+	brgt, i, 1, loop_label3
+	goto, loop_label3, , 
+	call, flush
+	add, i, 1, i
+	goto, loop_label2, , 
+loop_label3:
+	return, , , 

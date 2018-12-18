@@ -1,0 +1,10 @@
+main:
+	array_load, $t0, b, 1
+	assign, $t1, 1, 
+	breq, a, $t0, compare_label0
+	assign, $t1, 0, 
+compare_label0:
+	breq, $t1, 0, if_label1
+	assign, a, b, 
+if_label1:
+	return, , , 

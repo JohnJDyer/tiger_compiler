@@ -1,0 +1,1 @@
+let var a: int; in let var b: int; in a:=b; end end

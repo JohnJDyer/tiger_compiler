@@ -1,0 +1,7 @@
+let
+  type A;
+  type B in F = float;
+  type C=int;
+in
+  flush();
+end

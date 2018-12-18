@@ -1,0 +1,17 @@
+main:
+	mult, 2, 3, $t0
+	add, 1, $t0, $t1
+	breq, $t1, 0, if_label0
+	mult, 2, 3, $t2
+	assign, $t3, 1, 
+	breq, 1, $t2, compare_label1
+	assign, $t3, 0, 
+compare_label1:
+	breq, $t3, 0, if_label2
+	call, flush
+	goto, if_label3, , 
+if_label2:
+	call, flush
+if_label3:
+if_label0:
+	return, , , 

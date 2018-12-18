@@ -1,0 +1,9 @@
+let
+  var A;
+  var B C: int;
+  var D, E F: float;
+  var G: array 123 [10] int;
+  var H: array 123 [10] of int;
+in
+  flush();
+end

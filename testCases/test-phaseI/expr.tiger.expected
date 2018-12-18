@@ -1,0 +1,76 @@
+main:
+	return, 1, , 
+	return, 1.0, , 
+	return, a, , 
+	array_load, $t0, b, 2
+	return, $t0, , 
+	return, 1, , 
+	return, 1.0, , 
+	return, a, , 
+	array_load, $t1, b, 2
+	return, $t1, , 
+	add, a, 1, $t2
+	return, $t2, , 
+	mult, a, 1, $t3
+	return, $t3, , 
+	div, a, 1, $t4
+	return, $t4, , 
+	array_load, $t5, b, 2
+	add, $t5, 1, $t6
+	return, $t6, , 
+	array_load, $t7, b, 3
+	sub, $t7, 1, $t8
+	return, $t8, , 
+	array_load, $t9, b, 2
+	assign, $t10, 1, 
+	breq, a, $t9, compare_label0
+	assign, $t10, 0, 
+compare_label0:
+	return, $t10, , 
+	assign, $t11, 1, 
+	brneq, a, 5.0, compare_label1
+	assign, $t11, 0, 
+compare_label1:
+	return, $t11, , 
+	array_load, $t12, b, 3
+	assign, $t13, 1, 
+	brlt, $t12, 10, compare_label2
+	assign, $t13, 0, 
+compare_label2:
+	return, $t13, , 
+	array_load, $t14, b, 4
+	assign, $t15, 1, 
+	brgt, $t14, 20, compare_label3
+	assign, $t15, 0, 
+compare_label3:
+	return, $t15, , 
+	array_load, $t16, b, 5
+	assign, $t17, 1, 
+	brleq, $t16, 6, compare_label4
+	assign, $t17, 0, 
+compare_label4:
+	return, $t17, , 
+	array_load, $t18, b, 6
+	assign, $t19, 1, 
+	brgeq, $t18, 7, compare_label5
+	assign, $t19, 0, 
+compare_label5:
+	return, $t19, , 
+	and, 4, 2, $t20
+	return, $t20, , 
+	or, 2, 4, $t21
+	return, $t21, , 
+	mult, 2, 3, $t22
+	add, 1, $t22, $t23
+	return, $t23, , 
+	add, 1, 2, $t24
+	sub, 3, 4, $t25
+	mult, 5, 6, $t26
+	or, $t25, $t26, $t27
+	div, 7, 8, $t28
+	assign, $t29, 1, 
+	breq, $t27, $t28, compare_label6
+	assign, $t29, 0, 
+compare_label6:
+	and, $t24, $t29, $t30
+	return, $t30, , 

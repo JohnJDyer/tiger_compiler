@@ -1,0 +1,6 @@
+main:
+	add, 1, 2, $t0
+	mult, 3, 4, $t1
+	add, $t0, $t1, $t2
+	call, printi, $t2
+	return, , , 

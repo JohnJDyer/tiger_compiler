@@ -1,0 +1,8 @@
+let
+  function a(a: int, b: float);
+  function b(): ;
+  function c(): int begin;
+  function d(): int begin end;
+in
+  flush();
+end

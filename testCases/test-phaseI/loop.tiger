@@ -1,0 +1,12 @@
+let
+  var i : int := 42;
+in
+  while 1 do
+    flush();
+    break;
+  enddo;
+  for i := 0 to 1 do
+    break;
+    flush();
+  enddo;
+end

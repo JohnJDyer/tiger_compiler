@@ -1,0 +1,15 @@
+a:
+	call, flush
+	return, , , 
+b:
+	call, flush
+	return, , , 
+c:
+	call, flush
+	return, , , 
+d:
+	call, flush
+	return, , , 
+main:
+	call, flush
+	return, , , 
